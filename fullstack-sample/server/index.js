@@ -13,9 +13,9 @@ app.use(cors());
 //const posts = require('./routes/api/posts');
 
 //app.use('/api/posts', posts);
-app.get('/status',(req, res) => {
+app.post('/register',(req, res) => {
     res.send({
-        message:'hello world'
+        message:`Hello ${req.body.email}! Successfully Registered.Have fun`
     })
 }) 
 
