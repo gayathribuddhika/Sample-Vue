@@ -12,6 +12,7 @@
 </template>
 
 <script>
+/*
 import sample from '@services/sample';
 
 export default {
@@ -31,7 +32,7 @@ export default {
     }
   }
 }
-
+*/
 </script>
 
 <style scoped>
