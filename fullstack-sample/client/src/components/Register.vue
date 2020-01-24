@@ -12,8 +12,8 @@
 </template>
 
 <script>
-/*
-import sample from '@services/sample';
+
+import sample from '@services/Authentication'
 
 export default {
   data () {
@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     async register () {
-      const response = await sample.register({
+      const response = await Authentication.register({
         email: this.email,
         password: this.password
       })
@@ -32,7 +32,7 @@ export default {
     }
   }
 }
-*/
+
 </script>
 
 <style scoped>
