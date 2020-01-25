@@ -1,4 +1,4 @@
-import axios from axios;
+import axios from 'axios';
 
 const url = 'http://localhost:8085/api/posts';
 
@@ -12,7 +12,7 @@ class PostService {
                 resolve(
                     data.map(post => ({
                         ...post,
-                        createAt: new Data(post.createAt)
+                        createAt: new Date(post.createAt)
                     }))
                 );
             } catch(err) {
@@ -33,3 +33,4 @@ class PostService {
         return axios.delete(`${url}${id}`);
     }
 }
+export default PostService;
